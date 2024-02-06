@@ -55,6 +55,8 @@
 
 .cardFooter {
   display: flex;
+  position: relative;
+  bottom: -16px;
 }
 
 .delivery {

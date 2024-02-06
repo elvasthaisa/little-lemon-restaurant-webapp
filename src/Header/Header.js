@@ -1,6 +1,6 @@
 import './Header.css';
 import Nav from "../Nav/Nav";
-import LemonLogo from '../assets/logo.jpg';
+import LemonLogo from '../assets/icons/logo.jpg';
 
 const Header = () => {
   return (

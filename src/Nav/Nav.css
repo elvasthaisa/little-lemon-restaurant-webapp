@@ -13,7 +13,7 @@ nav ul {
 
 nav a {
   font-size: 18px;
-  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-karla);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;

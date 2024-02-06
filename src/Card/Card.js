@@ -1,5 +1,5 @@
 import "./Card.css";
-import bikeIcon from "../assets/bike-icon.svg";
+import bikeIcon from "../assets/icons/bike-icon.svg";
 
 const Card = ({ image, alt, title, price, child }) => {
   return (

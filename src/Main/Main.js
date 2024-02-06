@@ -1,15 +1,16 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import "./Main.css";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
+import CustomerCard from "../CustomerCard/CustomerCard";
 
 import restaurantFood from "../assets/restauranfood.jpg";
 import salad from "../assets/salad.jpg";
 import bruschetta from "../assets/bruschetta.jpg";
 import lemonDessert from "../assets/lemon-dessert.jpg";
+import restaurant from "../assets/restaurant.jpg";
+import restaurantChef from "../assets/restaurant-chef.jpg";
 
 const Main = () => {
   return (
@@ -67,14 +68,46 @@ const Main = () => {
       <section>
         <article>
           <h2>What our customers say!</h2>
-          <FontAwesomeIcon icon={faStar} />
-          <div>
+
+          <div className="custCardGroup">
+            <CustomerCard
+              name="Sara Lopez"
+              username="Sara72"
+              text="“Seriously cannot stop thinking about the Turkish meal with Cheese!”"
+            />
+            <CustomerCard
+              name="John Doe"
+              username="Johnny_Doe"
+              text="“We had such a great time celebrating my granddaughter’s birthday!”"
+            />
+            <CustomerCard
+              name="Tim Barbera"
+              username="TimmyB101"
+              text="“Best Feta Salad in town, flawless everytime I taste it!”"
+            />
+            <CustomerCard
+              name="George Carlton"
+              username="GCarl81"
+              text="“Such a chilled out atmosphere. I love there.”"
+            />
 
           </div>
         </article>
       </section>
 
-      <section></section>
+      <section className="aboutSection">
+        <div className="aboutText">
+          <h1 className="aboutTitle">Little Lemon</h1>
+          <h2 className="aboutSubtitle">Chicago</h2>
+          <p className="aboutParagraph">Discover a culinary journey at Little Lemon Restaurant, where fresh, locally sourced ingredients meet creative flavors.</p>
+          <p className="aboutParagraph">Our menu is a celebration of traditional recipes with a touch of modern cuisine. Join us for an unforgettable dining experience in a cozy and pet-friendly atmosphere in the heart of Chicago.</p>
+        </div>
+
+        <div className="aboutImages">
+          <img src={restaurantChef} alt="Restaurant's chef preparing a meal" className="over" />
+          <img src={restaurant} alt="Little Lemon's ambiance" className="under" />
+        </div>
+      </section>
 
       <section></section>
     </main>

@@ -5,6 +5,8 @@
   --secondary2-color: #FBDABB;
   --secondary3-color: #EDEFEE;
   --secondary4-color: #333333;
+  --font-karla: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-markazi: 'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -18,7 +20,7 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   
-  padding: 0 20px 0 20px;
+  padding: 0 120px;
   background-color: var(--primary1-color);
 }
 
@@ -28,7 +30,7 @@ main {
 
 .bannerTitle {
   font-size: 64px;
-  font-family:'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-markazi);
   font-weight: 500;
   color: var(--primary2-color);
   margin: 32px 0 0 0;
@@ -36,7 +38,7 @@ main {
 
 .subtitle {
   font-size: 40px;
-  font-family:'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-markazi);
   font-weight: 500;
   color: var(--secondary3-color);
   margin: 0 0 46px 0;
@@ -44,9 +46,9 @@ main {
 
 .leadText{
   font-size: 18px;
-  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-karla);
   color: var(--secondary3-color);
-  max-width: 25%;
+  max-width: 50%;
   margin: 0;
 }
 
@@ -67,6 +69,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  padding: 0 120px;
 }
 
 .menuHeader {
@@ -80,7 +84,7 @@ main {
 
 .menuTitle {
   font-size: 40px;
-  font-family:'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-markazi);
   font-weight: 500;
   color: var(--secondary4-color);
   margin: 0;
@@ -97,17 +101,90 @@ main {
 /*** Testimonials Section ***/
 
 article {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(251, 218, 187, .5);
   height: 470px;
 
   margin-top: 80px;
+  /* padding-top: 80px; */
+
+  padding: 80px 120px 0 120px;
 }
 
 article h2 {
-  font-family: 'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  var(--font-markazi);
   font-size: 40px;
   font-weight: 500;
   color: var(--secondary4-color);
   margin: 0;
+  align-self: center;
 }
 
+.custCardGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 48px;
+
+  /* max-width: 900px; */
+  justify-content: space-evenly;
+  /* align-self: center; */
+}
+
+/* About Section */
+.aboutSection {
+  display: flex;
+  padding: 80px 120px; 
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.aboutTitle {
+  font-size: 64px;
+  font-family: var(--font-markazi);
+  font-weight: 500;
+  color: var(--primary1-color);
+  margin: 0;
+}
+
+.aboutSubtitle {
+  font-size: 40px;
+  font-family: var(--font-markazi);
+  font-weight: 500;
+  color: var(--primary2-color);
+  margin: 0 0 16px 0;
+}
+
+.aboutParagraph {
+  font-size: 18px;
+  font-family: var(--font-karla);
+  font-weight: 600;
+  color: var(--primary1-color);
+  max-width: 50%;
+  margin: 16px 0 0 0;
+}
+
+.aboutImages > img {
+  display: flex;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+
+  border-radius: 16px;
+}
+
+.under {
+  z-index: 1;
+}
+
+.over {
+  z-index: 2;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
