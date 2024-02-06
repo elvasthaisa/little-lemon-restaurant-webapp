@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 389px;
+  width: auto;
+  max-width: 256px;
+  background-color: var(--secondary3-color);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cardImage img {
+  height: 177px;
+  width: auto;
+  max-width: 256px;
+  border-radius: 16px 16px 0 0;
+}
+
+.cardDescription {
+  padding: 12px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--secondary4-color);
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.price {
+  font-size: 18px;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--secondary1-color);
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 16px;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary1-color);
+}
+
+.cardFooter {
+  display: flex;
+}
+
+.delivery {
+  font-size: 14px;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--secondary4-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardFooter img {
+  height: 18px;
+  width: auto;
+  margin: 0 0 0 8px;
+}

@@ -1,0 +1,23 @@
+.header-container {
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ".      img  nav  nav  nav     .";
+  
+  align-items: center;
+
+  padding: 20px 0 20px 0;
+}
+
+.logo {
+  justify-self: end;
+  grid-column: span 2;
+
+  height: 54px;
+  width: auto;
+}
+
+.nav {
+  grid-column: span 6;
+}

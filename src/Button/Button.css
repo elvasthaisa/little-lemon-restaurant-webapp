@@ -1,0 +1,23 @@
+.btn {
+  width: 204px;
+  height: 50px;
+
+  background-color: var(--primary2-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+
+  margin: 0;
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+.buttonText {
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}

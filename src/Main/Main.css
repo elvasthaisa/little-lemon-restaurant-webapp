@@ -1,0 +1,113 @@
+:root {
+  --primary1-color: #495E57;
+  --primary2-color: #F4CE14;
+  --secondary1-color: #EE9972;
+  --secondary2-color: #FBDABB;
+  --secondary3-color: #EDEFEE;
+  --secondary4-color: #333333;
+}
+
+main {
+  display: grid;
+}
+
+/*** Banner Section ***/
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  
+  padding: 0 20px 0 20px;
+  background-color: var(--primary1-color);
+}
+
+.bio .bannerText {
+  display: grid;
+}
+
+.bannerTitle {
+  font-size: 64px;
+  font-family:'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: var(--primary2-color);
+  margin: 32px 0 0 0;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-family:'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: var(--secondary3-color);
+  margin: 0 0 46px 0;
+}
+
+.leadText{
+  font-size: 18px;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--secondary3-color);
+  max-width: 25%;
+  margin: 0;
+}
+
+.asideImage img {
+  height: 420px;
+  width: 355px;
+  max-width: 80%;
+  border-radius: 16px;
+
+  position: relative;
+  bottom: -120px;
+}
+
+
+/*** Week Specials Section ***/
+
+.weekSpecialsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  margin: 170px 0 50px 0;
+  /* max-width: 922px; */
+}
+
+.menuTitle {
+  font-size: 40px;
+  font-family:'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: var(--secondary4-color);
+  margin: 0;
+}
+
+.menuCards {
+  display: flex;
+  justify-content: space-evenly;
+
+  /* max-width: 922px; */
+}
+
+
+/*** Testimonials Section ***/
+
+article {
+  background-color: rgba(251, 218, 187, .5);
+  height: 470px;
+
+  margin-top: 80px;
+}
+
+article h2 {
+  font-family: 'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--secondary4-color);
+  margin: 0;
+}
+
