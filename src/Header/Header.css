@@ -1,13 +1,12 @@
-.header-container {
-  display: grid;
-
-  grid-template-rows: auto;
-  grid-template-areas: 
-    ".      img  nav  nav  nav     .";
-  
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 
-  padding: 20px 120px 20px 120px;
+  height: 70px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .logo {

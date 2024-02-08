@@ -4,7 +4,7 @@ import LemonLogo from '../assets/icons/logo.jpg';
 
 const Header = () => {
   return (
-    <header className="header-container">
+    <header className="headerContainer">
       <img src={LemonLogo} alt="Little lemon logo" className="logo" />
       <Nav className="nav" />
     </header>
