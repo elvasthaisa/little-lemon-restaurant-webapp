@@ -10,7 +10,9 @@
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*** Banner Section ***/
@@ -69,17 +71,19 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  padding: 0 120px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .menuHeader {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   
   margin: 170px 0 50px 0;
-  /* max-width: 922px; */
+  width: 100%;
+  max-width: 922px;
 }
 
 .menuTitle {
@@ -92,9 +96,13 @@ main {
 
 .menuCards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  /* max-width: 922px; */
+  max-width: 922px;
+}
+
+.menuCards {
+  margin-right: 0 10px;
 }
 
 
@@ -107,41 +115,45 @@ article {
   height: 470px;
 
   margin-top: 80px;
-  /* padding-top: 80px; */
-
   padding: 80px 120px 0 120px;
 }
 
 article h2 {
+  align-self: center;
   font-family:  var(--font-markazi);
   font-size: 40px;
   font-weight: 500;
   color: var(--secondary4-color);
   margin: 0;
-  align-self: center;
 }
 
 .custCardGroup {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 48px;
+  justify-content: space-between;
 
-  /* max-width: 900px; */
-  justify-content: space-evenly;
-  /* align-self: center; */
+  width: 100%;
+  max-width: 900px;
+  margin: 48px auto 0 auto;
 }
 
 /* About Section */
+
 .aboutSection {
   display: flex;
-  padding: 80px 120px; 
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 900px;
+  padding: 80px 0;
 }
 
 .aboutText {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .aboutTitle {
@@ -165,15 +177,20 @@ article h2 {
   font-family: var(--font-karla);
   font-weight: 600;
   color: var(--primary1-color);
-  max-width: 50%;
+  width: 100%;
+  max-width: 60%;
   margin: 16px 0 0 0;
+}
+
+.aboutImages {
+  margin-right: 50px;
 }
 
 .aboutImages > img {
   display: flex;
-  max-width: 300px;
-  width: auto;
   height: auto;
+  width: auto;
+  max-width: 300px;
 
   border-radius: 16px;
 }

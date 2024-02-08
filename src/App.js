@@ -5,13 +5,13 @@ import Main from './Main/Main';
 
 const App = () => {
   return (
-    <>
+    <div className='App'>
       <Header />
 
       <Main />
 
       <Footer />
-    </>
+    </div>
   );
 }
 
