@@ -16,17 +16,19 @@ const Main = () => {
   return (
     <main>
       <section className="bio">
-        <div className="bannerText">
-          <h1 className="bannerTitle">Little Lemon</h1>
-          <h2 className="subtitle">Chicago</h2>
-          <p className="leadText">We are a family owned Mediterranean restaurant, focused on  traditional recipes served with a modern twist.</p>
-          <Button>
-            <p className="buttonText">Reserve a Table</p>
-          </Button>
-        </div>
+        <div className="bioContainer">
+          <div className="bannerText">
+            <h1 className="bannerTitle">Little Lemon</h1>
+            <h2 className="subtitle">Chicago</h2>
+            <p className="leadText">We are a family owned Mediterranean restaurant, focused on  traditional recipes served with a modern twist.</p>
+            <Button>
+              <p className="buttonText">Reserve a Table</p>
+            </Button>
+          </div>
 
-        <div className="asideImage">
-          <img src={restaurantFood} alt="restaurant chef example" />
+          <div className="asideImage">
+            <img src={restaurantFood} alt="restaurant chef example" />
+          </div>
         </div>
       </section>
 

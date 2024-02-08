@@ -1,3 +1,14 @@
+:root {
+  --primary1-color: #495E57;
+  --primary2-color: #F4CE14;
+  --secondary1-color: #EE9972;
+  --secondary2-color: #FBDABB;
+  --secondary3-color: #EDEFEE;
+  --secondary4-color: #333333;
+  --font-karla: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-markazi: 'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -6,8 +17,3 @@ html {
   box-sizing: inherit;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}

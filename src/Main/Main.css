@@ -1,14 +1,3 @@
-:root {
-  --primary1-color: #495E57;
-  --primary2-color: #F4CE14;
-  --secondary1-color: #EE9972;
-  --secondary2-color: #FBDABB;
-  --secondary3-color: #EDEFEE;
-  --secondary4-color: #333333;
-  --font-karla: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-markazi: 'Markazi Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -18,16 +7,22 @@ main {
 /*** Banner Section ***/
 
 .bio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-items: center;
-  
-  padding: 0 120px;
   background-color: var(--primary1-color);
+}
+
+.bioContainer {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
 }
 
 .bio .bannerText {
   display: grid;
+  width: 100%;
 }
 
 .bannerTitle {
@@ -35,7 +30,7 @@ main {
   font-family: var(--font-markazi);
   font-weight: 500;
   color: var(--primary2-color);
-  margin: 32px 0 0 0;
+  margin: 32px 0 0 0 !important;
 }
 
 .subtitle {
@@ -43,7 +38,7 @@ main {
   font-family: var(--font-markazi);
   font-weight: 500;
   color: var(--secondary3-color);
-  margin: 0 0 46px 0;
+  margin: 0 0 24px 0;
 }
 
 .leadText{
@@ -54,14 +49,19 @@ main {
   margin: 0;
 }
 
+.asideImage {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .asideImage img {
-  height: 420px;
-  width: 355px;
+  height: auto;
+  width: 100%;
   max-width: 80%;
   border-radius: 16px;
 
   position: relative;
-  bottom: -120px;
+  bottom: -100px;
 }
 
 
