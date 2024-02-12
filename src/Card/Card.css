@@ -1,8 +1,9 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 389px;
-  width: auto;
+  min-height: 389px;
+  height: 100%;
+  min-width: 230px;
   max-width: 256px;
   background-color: var(--secondary3-color);
   border-radius: 16px 16px 0 0;
@@ -14,8 +15,8 @@
 }
 
 .cardImage img {
-  height: 177px;
-  width: auto;
+  max-height: 171px;
+  width: 100%;
   max-width: 256px;
   border-radius: 16px 16px 0 0;
 }
@@ -75,4 +76,15 @@
   height: 18px;
   width: auto;
   margin: 0 0 0 8px;
+}
+
+
+@media (max-width: 939px) {
+  .card {
+    margin-right: 40px;
+  }
+
+  .cardFooter {
+    bottom: -40px;
+  }
 }

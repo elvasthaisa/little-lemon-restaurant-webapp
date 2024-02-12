@@ -4,6 +4,7 @@ footer {
   background-color: var(--primary1-color);
   color: var(--secondary3-color);
 
+  width: 100%;
   padding: 40px 0;
 }
 
@@ -11,7 +12,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
 }
 
 .footerContainer > img {
@@ -53,5 +54,18 @@ section p {
   
   &:hover {
     color: var(--primary2-color);
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 30px;
   }
 }

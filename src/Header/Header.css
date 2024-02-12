@@ -5,7 +5,7 @@
 
   height: 70px;
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
@@ -19,4 +19,12 @@
 
 .nav {
   grid-column: span 6;
+}
+
+@media screen and (max-width: 939px) {
+  .headerContainer {
+    width: 100%;
+    max-width: 80%;
+    flex-direction: row;
+  }
 }

@@ -15,7 +15,8 @@ main {
 .bioContainer {
   display: flex;
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
+  min-height: 390px;
 
   margin: 0 auto;
 }
@@ -56,8 +57,6 @@ main {
 
 .asideImage img {
   height: auto;
-  width: 100%;
-  max-width: 80%;
   border-radius: 16px;
 
   position: relative;
@@ -71,7 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
   width: 100%;
 }
@@ -83,7 +82,7 @@ main {
   
   margin: 170px 0 50px 0;
   width: 100%;
-  max-width: 922px;
+  max-width: 920px;
 }
 
 .menuTitle {
@@ -98,11 +97,15 @@ main {
   display: flex;
   justify-content: space-between;
 
-  max-width: 922px;
+  max-width: 920px;
 }
 
 .menuCards {
   margin-right: 0 10px;
+}
+
+.slider-container {
+  display: none;
 }
 
 
@@ -115,7 +118,7 @@ article {
   height: 470px;
 
   margin-top: 80px;
-  padding: 80px 120px 0 120px;
+  padding-top: 80px;
 }
 
 article h2 {
@@ -124,7 +127,7 @@ article h2 {
   font-size: 40px;
   font-weight: 500;
   color: var(--secondary4-color);
-  margin: 0;
+  margin: 0 0 48px;
 }
 
 .custCardGroup {
@@ -133,8 +136,8 @@ article h2 {
   justify-content: space-between;
 
   width: 100%;
-  max-width: 900px;
-  margin: 48px auto 0 auto;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 /* About Section */
@@ -146,7 +149,7 @@ article h2 {
   align-items: center;
 
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
   padding: 80px 0;
 }
 
@@ -204,4 +207,95 @@ article h2 {
   position: relative;
   top: 50px;
   left: 50px;
+}
+
+
+@media screen and (max-width: 939px) {
+  .bioContainer {
+    max-width: 80%;
+    min-height: 430px;
+  }
+
+  .weekSpecialsSection {
+    max-width: 80%;
+  }
+
+  .aboutSection {
+    max-width: 80%;
+    padding: 56px 0;
+  }
+
+  .bannerTitle {
+    font-size: 48px;
+    margin: 24px 0 0 0 !important;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    line-height: 50%;
+    margin: 0 0 12px 0;
+  }
+
+  .asideImage img {
+    max-width: 100%;
+    max-height: 90%;
+  }
+
+  .menuHeader {
+    margin-top: 130px;
+  }
+  
+  .slider-container {
+    display: block;
+  }
+  
+  .menuCards, .custCardGroup {
+    display: none;
+  }
+
+  /* .article {
+    padding: 56px 0;
+    margin-top: 60px;
+  } */
+
+  .customerCards {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .customerCard {
+    margin-right: 30px;
+  }
+
+  .aboutImages > img {
+    max-width: 250px;
+  }
+
+  .aboutTitle {
+    font-size: 48px;
+  }
+
+  .aboutSubtitle {
+    font-size: 32px;
+  }
+
+  .aboutParagraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .aboutSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .aboutText, .aboutParagraph {
+    max-width: 100%;
+  }
+
+  .aboutImages {
+    max-width: 50%;
+    justify-content: center;
+  }
 }

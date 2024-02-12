@@ -1,6 +1,7 @@
 .customerCard {
-  height: 226px;
-  width: auto;
+  min-height: 226px;
+  height: 100%;
+  min-width: 164px;
   max-width: 204px;
   background-color: #FFF;
 

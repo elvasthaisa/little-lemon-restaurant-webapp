@@ -1,4 +1,7 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 import "./Main.css";
 import Button from "../Button/Button";
@@ -13,6 +16,11 @@ import restaurant from "../assets/restaurant.jpg";
 import restaurantChef from "../assets/restaurant-chef.jpg";
 
 const Main = () => {
+  let settings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+  };
   return (
     <main>
       <section className="bio">
@@ -65,6 +73,39 @@ const Main = () => {
             child="Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
         </div>
+
+        <div className="slider-container">
+          <Slider 
+            {...settings}
+            slidesToShow={2.5}
+            slidesToScroll={2.5}
+            initialSlide={0}
+          >
+            <Card
+              image={salad}
+              alt="Greek salad plate"
+              title="Greek Salad"
+              price="$ 12.99"
+              child="Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            />
+
+            <Card
+              image={bruschetta}
+              alt="Bruschetta plate"
+              title="Bruschetta"
+              price="$ 5.99"
+              child="Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            />
+
+            <Card
+              image={lemonDessert}
+              alt="Lemon dessert plate"
+              title="Lemon Dessert"
+              price="$ 5.00"
+              child="Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            />
+          </Slider>
+        </div>
       </section>
 
       <section>
@@ -93,6 +134,35 @@ const Main = () => {
               text="“Such a chilled out atmosphere. I love there.”"
             />
 
+          </div>
+          <div className="slider-container customerCards">
+            <Slider 
+              {...settings}
+              slidesToShow={3.5}
+              slidesToScroll={2}
+              initialSlide={0}
+            >
+              <CustomerCard
+                name="Sara Lopez"
+                username="Sara72"
+                text="“Seriously cannot stop thinking about the Turkish meal with Cheese!”"
+              />
+              <CustomerCard
+                name="John Doe"
+                username="Johnny_Doe"
+                text="“We had such a great time celebrating my granddaughter’s birthday!”"
+              />
+              <CustomerCard
+                name="Tim Barbera"
+                username="TimmyB101"
+                text="“Best Feta Salad in town, flawless everytime I taste it!”"
+              />
+              <CustomerCard
+                name="George Carlton"
+                username="GCarl81"
+                text="“Such a chilled out atmosphere. I love there.”"
+              />
+            </Slider>
           </div>
         </article>
       </section>
