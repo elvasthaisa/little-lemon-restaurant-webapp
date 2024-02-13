@@ -64,82 +64,6 @@ main {
 }
 
 
-/*** Week Specials Section ***/
-
-.weekSpecialsSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 920px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.menuHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  margin: 170px 0 50px 0;
-  width: 100%;
-  max-width: 920px;
-}
-
-.menuTitle {
-  font-size: 40px;
-  font-family: var(--font-markazi);
-  font-weight: 500;
-  color: var(--secondary4-color);
-  margin: 0;
-}
-
-.menuCards {
-  display: flex;
-  justify-content: space-between;
-
-  max-width: 920px;
-}
-
-.menuCards {
-  margin-right: 0 10px;
-}
-
-.slider-container {
-  display: none;
-}
-
-
-/*** Testimonials Section ***/
-
-article {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(251, 218, 187, .5);
-  height: 470px;
-
-  margin-top: 80px;
-  padding-top: 80px;
-}
-
-article h2 {
-  align-self: center;
-  font-family:  var(--font-markazi);
-  font-size: 40px;
-  font-weight: 500;
-  color: var(--secondary4-color);
-  margin: 0 0 48px;
-}
-
-.custCardGroup {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 100%;
-  max-width: 920px;
-  margin: 0 auto;
-}
-
 /* About Section */
 
 .aboutSection {
@@ -216,10 +140,6 @@ article h2 {
     min-height: 430px;
   }
 
-  .weekSpecialsSection {
-    max-width: 80%;
-  }
-
   .aboutSection {
     max-width: 80%;
     padding: 56px 0;
@@ -239,32 +159,6 @@ article h2 {
   .asideImage img {
     max-width: 100%;
     max-height: 90%;
-  }
-
-  .menuHeader {
-    margin-top: 130px;
-  }
-  
-  .slider-container {
-    display: block;
-  }
-  
-  .menuCards, .custCardGroup {
-    display: none;
-  }
-
-  /* .article {
-    padding: 56px 0;
-    margin-top: 60px;
-  } */
-
-  .customerCards {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .customerCard {
-    margin-right: 30px;
   }
 
   .aboutImages > img {

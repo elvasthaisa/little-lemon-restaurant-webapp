@@ -1,0 +1,62 @@
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(251, 218, 187, .5);
+  height: 470px;
+
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+article h2 {
+  align-self: center;
+  font-family:  var(--font-markazi);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--secondary4-color);
+  margin: 0 0 48px;
+}
+
+.custCardGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 939px) {
+  .custCardGroup {
+    display: none;
+  }
+
+  .slider-container {
+    display: block;
+  }
+
+  .customerCards {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .customerCard {
+    margin: 0 auto;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 745) {
+  .customerCard {
+    max-width: 254px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .customerCard {
+    max-width: 274px;
+    margin: 0 auto;
+  }
+}
