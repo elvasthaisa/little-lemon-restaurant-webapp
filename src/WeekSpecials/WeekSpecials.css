@@ -82,3 +82,13 @@
     margin-top: 30px;
   }
 }
+
+@media screen and (max-width: 499px) {
+  .menuHeader {
+    margin-top: 48px;
+  }
+
+  .menuTitle {
+    font-size: 32px;
+  }
+}

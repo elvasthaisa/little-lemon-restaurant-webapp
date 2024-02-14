@@ -27,4 +27,16 @@
     max-width: 80%;
     flex-direction: row;
   }
+
+  .logo {
+    width: 160px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .logo {
+    width: 125px;
+    height: auto;
+  }
 }

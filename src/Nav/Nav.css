@@ -37,3 +37,10 @@ li:not(:first-child) {
     height: 30px;
   }
 }
+
+@media screen and (max-width: 499px) {
+  .hamburgerIcon {
+    width: 35px;
+    height: 25px;
+  }
+}

@@ -45,6 +45,18 @@ article h2 {
     margin: 0 auto;
     margin-right: 30px;
   }
+
+  article {
+    margin-top: 56px;
+    padding: 36px 0;
+
+    height: 100%;
+  }
+
+  article h2 {
+    font-size: 36px;
+    margin: 0 0 24px;
+  }
 }
 
 @media screen and (max-width: 745) {
@@ -58,5 +70,9 @@ article h2 {
   .customerCard {
     max-width: 274px;
     margin: 0 auto;
+  }
+
+  article h2 {
+    font-size: 32px;
   }
 }

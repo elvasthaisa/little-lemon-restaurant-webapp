@@ -193,3 +193,35 @@ main {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .bannerText {
+    width: 90%;
+  }
+  
+  .leadText {
+    max-width: 80%;
+    font-size: 16px;
+  }
+
+  .asideImage img {
+    max-height: 60%;
+  }
+
+  .aboutTitle, .bannerTitle {
+    font-size: 36px;
+  }
+
+  .aboutSubtitle, .subtitle {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .aboutImages {
+    max-width: 100%;
+  }
+
+  .aboutImages > img {
+    max-width: 216px;
+  }
+}
