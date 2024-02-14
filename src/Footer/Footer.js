@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 import twitterIcon from "../assets/icons/twitter-icon.svg";
 import instagramIcon from "../assets/icons/instagram-icon.svg";
@@ -13,12 +14,12 @@ const Footer = () => {
         <section className="sitemap">
           <h4>Sitemap</h4>
 
-          <p>Home</p>
-          <p>About</p>
-          <p>Menu</p>
-          <p>Reservations</p>
-          <p>Order Online</p>
-          <p>Login</p>
+          <li><Link to="/" className="footerItem">Home</Link></li>
+          <li><Link to="/about" className="footerItem">About</Link></li>
+          <li><Link to="/menu" className="footerItem">Menu</Link></li>
+          <li><Link to="/reservations" className="footerItem">Reservations</Link></li>
+          <li><Link to="/order" className="footerItem">Order Online</Link></li>
+          <li><Link to="/login" className="footerItem">Login</Link></li>
         </section>
 
         <section className="contactUs">

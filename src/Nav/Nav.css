@@ -3,9 +3,10 @@ nav ul {
   grid-template-columns: repeat(6, auto);
   list-style: none;
   padding: 0;
+  gap: 25px;
 }
 
-nav a {
+nav .navItem {
   font-size: 18px;
   font-family: var(--font-karla);
   font-weight: 700;
@@ -18,9 +19,6 @@ nav a {
   }
 }
 
-li:not(:first-child) {
-  margin-left: 25px;
-}
 
 .hamburgerIcon {
   display: none;

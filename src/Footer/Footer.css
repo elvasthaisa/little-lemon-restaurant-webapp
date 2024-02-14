@@ -42,15 +42,24 @@ section h4 {
   margin: 0 0 4px;
 }
 
-section p {
+li .footerItem, section p {
   font-family: var(--font-karla);
   font-size: 16px;
   font-weight: 500;
-  margin: 12px 0 0;
 }
 
-.sitemap p, .contactUs p:nth-child(2n+3), .social img {
+.sitemap {
+  list-style-type: none;
+}
+
+li .footerItem {
+  text-decoration: none;
+  color: var(--secondary3-color);
+}
+
+li .footerItem, .sitemap li, .contactUs p:nth-child(2n+3) {
   cursor: pointer;
+  margin: 12px 0 0;
   
   &:hover {
     color: var(--primary2-color);

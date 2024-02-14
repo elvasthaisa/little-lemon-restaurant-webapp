@@ -1,16 +1,20 @@
 import './App.css';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Main from './Main/Main';
+
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './Pages/Homepage';
+import Reservations from './Pages/Reservations';
 
 const App = () => {
   return (
     <div className='App'>
-      <Header />
-
-      <Main />
-
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<Homepage />} />
+        <Route path="/menu" element={<Homepage />} />
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/order" element={<Homepage />} />
+        <Route path="/login" element={<Homepage />} />
+      </Routes>
     </div>
   );
 }
